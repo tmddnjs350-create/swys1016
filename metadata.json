@@ -1,0 +1,6 @@
+{
+  "name": "연수야 생일 축하해! 🎂",
+  "description": "10월 16일 김연수를 위한 세상에 단 하나뿐인 특별한 생일 축하 웹사이트 (제작: 최승원)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Gowun Dodum', 'Noto Sans KR', sans-serif;
+  }
+}
+
+.font-gaegu {
+  font-family: 'Gaegu', cursive;
+}
+
+.font-gamja {
+  font-family: 'Gamja Flower', cursive;
+}
+
+.font-gowun {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+
+.animate-spin-slow-paused {
+  animation: spinSlow 12s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(251, 146, 60, 0.9));
+  }
+  50% {
+    transform: scale(1.15) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(249, 115, 22, 1));
+  }
+}
+
+.animate-flame {
+  animation: flameFlicker 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
